@@ -1,26 +1,55 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* === پایه === */
+html {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden; /* فقط افقی رو ببند، عمودی رو نه */
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  overflow-y: auto; /* ✅ اطمینان از فعال بودن اسکرول عمودی */
+  overflow-x: hidden;
+  overscroll-behavior: auto; /* از none یا contain استفاده نکن */
+}
+
+/* === سایر تنظیمات === */
+* {
+  box-sizing: border-box;
+  font-family: karim;
+  direction: rtl;
+}
+
+/* فونت */
+@font-face {
+  font-family: karim;
+  src: url("/Webfonts/fonts/woff2/IRANSansX-Medium.woff2");
+  font-display: swap;
+}
+
+/* تصاویر و iframe */
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ✅ اسکرول‌بار سفارشی (اینجا بیار پایین‌تر از overflow تنظیمات تا تداخل نکنه) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
 }

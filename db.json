@@ -1,0 +1,157 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "صفحه اصلی",
+      "link": "/home",
+      "submenu": []
+    },
+    {
+      "id": 2,
+      "name": "شرکت گلستان",
+      "link": "/factory",
+      "submenu": [
+        { "id": 21, "name": "معرفی شرکت", "link": "/factory/introduce" },
+        { "id": 22, "name": "تاریخچه گلستان", "link": "/factory/history" },
+        { "id": 23, "name": "اخبار و اطلاعیه ها", "link": "/factory/news" },
+        {
+          "id": 24,
+          "name": "مسئولیت های اجتماعی",
+          "link": "/factory/responsibility"
+        },
+        { "id": 25, "name": "سازمان فروش", "link": "/factory/org" },
+        { "id": 26, "name": "سازمان توزیع", "link": "/factory/delivery" },
+        { "id": 27, "name": "برندها", "link": "/factory/brands" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "محصولات",
+      "link": "/products",
+      "submenu": [
+        { "id": 31, "name": "چای", "link": "/products/tea" },
+        { "id": 32, "name": "ناتس", "link": "/products/nuts" },
+        { "id": 33, "name": "ادویه و چاشنی", "link": "/products/spice" },
+        { "id": 34, "name": "برنج", "link": "/products/rice" },
+        { "id": 35, "name": "زعفران و زرشک", "link": "/products/saffron" },
+        { "id": 36, "name": "دمنوش", "link": "/products/damnosh" },
+        { "id": 37, "name": "حبوبات و غلات", "link": "/products/grain" },
+        { "id": 38, "name": "عصاره و شربت گیاهی", "link": "/products/essense" },
+        { "id": 39, "name": "قند و شکر", "link": "/products/sugar" },
+        { "id": 310, "name": "هاتی نودل", "link": "/products/noodle" },
+        { "id": 311, "name": "سایر محصولات", "link": "/products/other" },
+        { "id": 312, "name": "گل کیس", "link": "/products/flower" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "وبلاگ",
+      "link": "/weblog",
+      "submenu": [
+        { "id": 41, "name": "مجله گلستان", "link": "/weblog/magazine" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "قرعه کشی",
+      "link": "/qore",
+      "submenu": []
+    },
+    {
+      "id": 6,
+      "name": "استخدام",
+      "link": "/employ",
+      "submenu": []
+    },
+    {
+      "id": 7,
+      "name": "تماس با ما",
+      "link": "/contact",
+      "submenu": [
+        { "id": 71, "name": "دفتر مرکزی", "link": "/contact/central" },
+        { "id": 71, "name": "صدای مصرف کنندگان", "link": "/contact/voice" },
+        { "id": 71, "name": "ارتباط با مشترکین", "link": "/contact/relation" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "EN",
+      "link": "/https://www.golestan.com/en/",
+      "submenu": []
+    }
+  ],
+  "qore": [
+    {
+      "id": 1,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/07/tea-pic1.png",
+      "alt": "qore"
+    }
+  ],
+  "rice": [
+    {
+      "id": 1,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/01/image2-new-1.jpg",
+      "alt": "rice"
+    }
+  ],
+  "tea": [
+    {
+      "id": 1,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/01/image3-new.jpg",
+      "alt": "tea"
+    }
+  ],
+  "pesteh": [
+    {
+      "id": 1,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/01/image4-new.jpg",
+      "alt": "pesteh"
+    }
+  ],
+  "magazine": [
+    {
+      "id": 1,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/05/recipe-pic2.jpg",
+      "alt": "spagetti",
+      "title": "ماکارونی با سبزیجات",
+      "body": "ابتدا ماکارانی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و نمک‌ می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌ پیازها را خرد کرده‌ و روی‌ روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود…"
+    },
+    {
+      "id": 2,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/05/recipe-pic3.jpg",
+      "alt": "soup",
+      "title": "سوپ مکزیکی",
+      "body": "گوشت بوقلمون را در یک ماهیتابه بزرگ ریخته، آب روی آن بریزید تا روی آن را بپوشاند و به مدت نیم ساعت آن را بپزید. گوشت را از مایع آن بیرون آورده…"
+    },
+    {
+      "id": 3,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/06/recipe-pic-Chilakile-1401.jpg",
+      "alt": "chila",
+      "title": "چیلاکیله",
+      "body": "احتمالا نام چیلا کیله را نشنیده باشید ولی اگر یکبار این غذای فوق‌العاده خوشمزه را تهیه کنید و نوش جان کنید جزئی جدانشدنی از فهرست"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/06/hoti-banner.png",
+      "alt": "salad",
+      "title": "سالاد نودل",
+      "body": "نودل هاتی کارا یك میان‌وعده‌ی مغذی، در هر موقعیتی كه باشید با كمی آب جوش و یك نودل هاتی‌كارا می‌توانید از یك غذای سالم و خوشمزه لذت ببرید."
+    },
+    {
+      "id": 2,
+      "image": "https://www.1dayoff.com/uploads/ProductsPhotos/15869007/473808_2000.jpg",
+      "alt": "noodle",
+      "title": "اینستاگرام هاتی نودل",
+      "body": "نودل‌های هاتی كارا را می‌توان جایگزین سالمی برای غذاهای فست‌فودی دانست. طعم عالی،‌ ارزش غذایی بالا و قیمت مناسب از این محصول غذای سالم و كاملی ساخته است."
+    },
+    {
+      "id": 3,
+      "image": "https://www.golestan.com/wp-content/uploads/2023/06/rice-banner.png",
+      "alt": "rice",
+      "title": "برنج گلستان",
+      "body": "عطر و طعم بی‌نظیر برنج گلستان با هیچ برنج دیگری قابل مقایسه نیست. با گلستان،‌ كیفیت زندگی بالاتر از همیشه است. چرا كه مشتریان گلستان؛‌ لایق بهترین ها هستند."
+    }
+  ]
+}
