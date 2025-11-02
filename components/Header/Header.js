@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <>
-      {/* ✅ fixed header */}
+      {/*  fixed header */}
       <div ref={headerRef} className="fixed top-0 left-0 w-full z-50 bg-black">
         <header className="relative w-full">
           <div
@@ -82,9 +82,7 @@ const Header = () => {
                       key={`${elem.id}-${idx}`}
                     >
                       <a href={elem.link}>{elem.name}</a>
-                      <ul
-                        className="absolute top-full right-0 bg-[#2d2d2d] hidden group-hover/sub:flex flex-col text-[#afb2b4] gap-1 py-2 w-[180px] z-[60]"
-                      >
+                      <ul className="absolute top-full right-0 bg-[#2d2d2d] hidden group-hover/sub:flex flex-col text-[#afb2b4] gap-1 py-2 w-[180px] z-[60]">
                         {elem.submenu.map((e, itx) => (
                           <li
                             key={`${e.id}-${itx}`}
@@ -132,34 +130,33 @@ const Header = () => {
         </header>
       </div>
 
-      {/* ✅ منوی موبایل */}
-     <div
-  className={`fixed left-0 w-full text-[#AFB2B4] flex flex-col items-center justify-start overflow-y-auto transition-all duration-500 ease-in-out transform ${
-    menuOpen
-      ? "translate-y-0 opacity-100"
-      : "-translate-y-full opacity-0 pointer-events-none"
-  } md:hidden`}
-  style={{
-    top: `${headerHeight}px`,
-    height: `calc(100vh - ${headerHeight}px)`,
-    backgroundColor: "rgba(0, 0, 0, 0.97)", // پس‌زمینه‌ی کاملاً تیره و کمی شفاف برای حس عمق
-    backdropFilter: "blur(2px)", // افکت بلور ملایم فقط برای زیبایی
-    zIndex: 100, // مطمئن می‌شیم بالاتر از بقیه عناصره
-  }}
->
-  <ul className="flex flex-col items-center gap-4 py-8 w-full text-lg">
-    {header.map((elem, idx) => (
-      <li
-        key={`${elem.id}-${idx}`}
-        className="cursor-pointer hover:text-white w-full text-center py-3 border-b border-gray-700"
-        onClick={() => setMenuOpen(false)}
+      {/*  منوی موبایل */}
+      <div
+        className={`fixed left-0 w-full text-[#AFB2B4] flex flex-col items-center justify-start overflow-y-auto transition-all duration-500 ease-in-out transform ${
+          menuOpen
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-full opacity-0 pointer-events-none"
+        } md:hidden`}
+        style={{
+          top: `${headerHeight}px`,
+          height: `calc(100vh - ${headerHeight}px)`,
+          backgroundColor: "rgba(0, 0, 0, 0.97)",
+          backdropFilter: "blur(2px)",
+          zIndex: 100,
+        }}
       >
-        <a href={elem.link}>{elem.name}</a>
-      </li>
-    ))}
-  </ul>
-</div>
-
+        <ul className="flex flex-col items-center gap-4 py-8 w-full text-lg">
+          {header.map((elem, idx) => (
+            <li
+              key={`${elem.id}-${idx}`}
+              className="cursor-pointer hover:text-white w-full text-center py-3 border-b border-gray-700"
+              onClick={() => setMenuOpen(false)}
+            >
+              <a href={elem.link}>{elem.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };

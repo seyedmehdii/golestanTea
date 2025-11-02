@@ -40,7 +40,7 @@ const Tea = () => {
           md:items-start md:text-right items-center text-center
         "
         style={{
-          transform: "translateY(20%)", // ✅ بالا بیاد تا داخل عکس نره
+          transform: "translateY(20%)",
         }}
       >
         <div className="md:ml-auto">

@@ -13,7 +13,7 @@ const ClientLayout = ({ children }) => {
       if (header) setHeaderHeight(header.offsetHeight);
     };
 
-    updateHeight(); // اجرای اولیه
+    updateHeight(); 
     window.addEventListener("resize", updateHeight);
     return () => window.removeEventListener("resize", updateHeight);
   }, []);

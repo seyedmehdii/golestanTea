@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
-/* === پایه === */
 html {
   width: 100%;
   min-height: 100%;
-  overflow-x: hidden; /* فقط افقی رو ببند، عمودی رو نه */
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -14,12 +13,11 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
-  overflow-y: auto; /* ✅ اطمینان از فعال بودن اسکرول عمودی */
+  overflow-y: auto;
   overflow-x: hidden;
-  overscroll-behavior: auto; /* از none یا contain استفاده نکن */
+  overscroll-behavior: auto;
 }
 
-/* === سایر تنظیمات === */
 * {
   box-sizing: border-box;
   font-family: karim;
@@ -33,7 +31,6 @@ body {
   font-display: swap;
 }
 
-/* تصاویر و iframe */
 img,
 video,
 iframe {
@@ -42,7 +39,6 @@ iframe {
   display: block;
 }
 
-/* ✅ اسکرول‌بار سفارشی (اینجا بیار پایین‌تر از overflow تنظیمات تا تداخل نکنه) */
 ::-webkit-scrollbar {
   width: 6px;
 }

@@ -16,7 +16,6 @@ const Responsibility = () => {
           <h2 className="text-[#B1B7BD] text-[18px] ">Mahdi Hospital</h2>
         </div>
 
-        {/* تصویر بیرون از div */}
         <Image
           src="/hospital.png"
           width={395}
@@ -27,7 +26,6 @@ const Responsibility = () => {
         />
       </div>
 
-      {/* spacer برای رعایت margin */}
       <div className="h-[180px] md:h-[220px]"></div>
     </>
   );
